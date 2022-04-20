@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     
     'InicioApp',
     'CuentasApp',
-    'BlogApp',
+        
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -66,8 +67,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [r'C:\Users\Usuario\Desktop\Blog\Blog\InicioApp\templates\InicioApp',
-                 r'C:\Users\Usuario\Desktop\Blog\Blog\CuentasApp\templates',
-                 r'C:\Users\Usuario\Desktop\Blog\Blog\BlogApp\templates'],
+                 r'C:\Users\Usuario\Desktop\Blog\Blog\CuentasApp\templates\CuentasApp',
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

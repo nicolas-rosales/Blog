@@ -1,0 +1,30 @@
+
+{% load static %}
+
+
+
+    {% if informacion.errors %}
+
+        <p style="color:red;"> Algo Salio Mal </p> 
+    
+    {% endif %}
+<body>
+<div>
+
+    
+    <form action="" method="POST"> 
+        {% csrf_token %}
+
+        <table>
+            <body>
+                
+            
+            {{ informacion.as_table }}
+        </body>
+        </table>
+
+        <input type="submit" value="Guardar Post">
+
+    </form>
+</div>        
+</body>
